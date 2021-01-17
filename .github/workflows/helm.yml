@@ -26,7 +26,7 @@ jobs:
           rm package.json
           rm package-lock.json
           git checkout gh-pages
-          mv dist .
+          mv dist/* .
           rm -rf dist/
           git add .
           git commit . -m "Automated Build"
