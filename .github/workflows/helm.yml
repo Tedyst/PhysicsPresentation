@@ -23,6 +23,8 @@ jobs:
         run: |
           npm i
           npm run build
+          rm package.json
+          rm package-lock.json
           git checkout gh-pages
           mv dist .
           rm -rf dist/
