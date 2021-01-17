@@ -1,0 +1,30 @@
+{
+  "name": "physics-prez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:watch": "npm run build -- --watch",
+    "dev": "webpack-dev-server --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stoica Tedy",
+  "license": "MIT",
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "reveal.js": "^3.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "debug-loader": "0.0.1",
+    "file-loader": "^2.0.0",
+    "isomorphic-jsx": "^0.1.5",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
