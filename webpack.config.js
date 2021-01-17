@@ -31,16 +31,11 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.png$/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[name].[ext]',
-							publicPath: '/'
-						}
-					}
-				]
+				test: /\.(jpe?g|png|gif|svg)$/i,
+				loader: 'file-loader',
+				options: {
+					name: '/static/[name].[ext]'
+				}
 			}
 		]
 	},
